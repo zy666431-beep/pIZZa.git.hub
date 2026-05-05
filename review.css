@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+body {
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color :black;
+   
+    margin: 0px;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive; 
+    font-size: 35px;
+    color: #ff4d4d;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ li {
+    margin-right: 30px;
+}
+
+ li a {
+    color: white;
+    text-decoration: none;;
+    transition: 0.3s;
+}
+
+ li a:hover {
+    color: #ff4d4d;
+}
+
+ 
+
+.sec1 {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    margin-top: 40px;
+    text-shadow: 0 0 5px white;
+}
+.sec2 {
+    padding: 50px 20px;
+    text-align: center;
+}
+.sec2 h2 {
+    margin-bottom: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 40px;
+}
+.firstcard {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px 2px gray;
+}
+.firstcard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 5px 0 gray;
+}
+.firstcard img {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.firstcard span {
+    font-size: 12px;
+    color: gray;
+}
+.firstcard p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.review {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    
+    color: white;
+}
+.review button {
+    margin-top: 40px;
+    padding: 15px 25px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review button:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: black
+}
+/* Responsive ده الجزء بتاع ال*/
+@media (max-width: 992px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}

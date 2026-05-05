@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order</title>
+  <link rel="stylesheet" href="test1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <header>
+        <div class="logo">Pizza</div>
+        <nav>
+            <ul>
+                 <li><a href="index.html">HOME</a></li>
+                  <li><a href="index.html#MENU">MENU</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="app.html">Complaint</a></li>
+                <li><a href="reservation.html"> Reservation</a></li>
+                <li><a href="reviews.html"> Review</a></li>
+                <li><a href="video.html">Galley</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+  <div class="Order-Form">
+    <h1>Pizza Order Form</h1>
+    <p class="prag">Carefully backed to reach your doorstep, Order Now!</p>
+  </div>
+  <form>
+
+    <div class="Full-Name">
+     <label for="box1">Full Name:</label>
+     <input id="box1" type="text" placeholder="Full Name">
+    </div>
+
+   <div class="Phone-Number">
+     <label for="box2">Phone Number:</label>
+     <input id="box2" type="tel" placeholder="Phone Number">
+    </div>
+
+   <div class="Address">
+     <label for="box3">Address:</label>
+     <input id="box3" type="text" placeholder="Address">
+   </div>
+           
+    <div class="Pizza-Type">
+     <label for="box4">Pizza type</label>
+     <select id="box4" name="pizza_type">
+         <option value="" disabled selected>Choose your Pizza</option>
+         <option value="chicken-ranch">Chicken Ranch</option>
+         <option value="viggic-garden">Viggic Garden</option>       
+         <option value="hot-pepperoni">Hot Pepperoni</option>
+         <option value="italian-margarita">Italian Margarita</option>
+         <option value="tuna-feast">Tuna Feast</option>
+         <option value="four-cheese-bliss">Four Cheese Bliss</option>
+         <option value="bbq-meat-lovers">BBQ Meat Lovers</option>
+     </select>
+    </div>
+
+    <div class="Pizza-size">
+      <label>Size:</label>
+      <br>
+      <label><input type="radio" name="pizza-size" value="small"> Small</label>
+      <label><input type="radio" name="pizza-size" value="medium"> Medium</label> 
+      <label><input type="radio" name="pizza-size" value="large"> Large</label> 
+    </div>
+
+    <div class="Pizza-Number">
+      <label for="box5">How many pizza ?</label>
+      <input id="box5" type="number" name="Pizza_Number" min="1" value="1">
+    </div>
+
+    <div class="Submit">
+      <input type="submit" value="Order Now">
+      <input type="reset" value="reset">
+    </div>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+  font-family: 'Righteous', sans-serif;
+  background: url('img/back.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color :black;
+   
+    margin: 0px;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive; 
+    font-size: 35px;
+    color: #ff4d4d;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ li {
+    margin-right: 30px;
+}
+
+ li a {
+    color: white;
+    text-decoration: none;;
+    transition: 0.3s;
+}
+
+ li a:hover {
+    color: #ff4d4d;
+}
+
+.contact-container {
+  width: 450px;
+  margin: 60px auto;
+  background: rgba(0,0,0,0.7);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  color: #fff;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+h1, h2, h3 {
+  font-family: 'Righteous', sans-serif;
+}
+
+p, label, input, textarea {
+  font-family: 'Righteous', sans-serif; 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff; 
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2); 
+  color: #fff; 
+  transition: 0.3s ease; 
+}
+
+input:focus, textarea:focus {
+  border-color: #f1c40f; 
+  background: #ffffff;   
+  color: #000;           
+  outline: none;
+}
+
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #dd1600;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #c0392b;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #ddd;
+}
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #e74c3c; 
+}
+
+.social-links i {
+  margin-right: 8px; 
+}
+

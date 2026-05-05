@@ -1,0 +1,142 @@
+body {
+    background-image: url('img/back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color :black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive; 
+    font-size: 35px;
+    color: #ff4d4d;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ li {
+    margin-right: 30px;
+}
+
+ li a {
+    color: white;
+    text-decoration: none;;
+    transition: 0.3s;
+}
+
+ li a:hover {
+    color: #ff4d4d;
+}
+
+
+.Order-Form {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 50px;
+}
+
+.Full-Name, .Phone-Number, .Address, .Pizza-Type, .Pizza-size, .Pizza-Number {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+}
+
+select option {
+    background: #222;
+    color: white;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Pizza-size label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.Submit {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+input[type="reset"] {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
